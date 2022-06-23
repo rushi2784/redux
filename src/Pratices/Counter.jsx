@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { decrementCount, incrementCount } from './Action';
+import { decrementCount, decrementTwenty, incrementCount, incrementFive } from './Action';
 
 function CounterP() {
 
@@ -13,6 +13,8 @@ function CounterP() {
             <div>
                 <button onClick={() => dispatch(incrementCount())}>Increment</button>
                 <button onClick={() => dispatch(decrementCount())}>Decrement</button>
+                <button onClick={() => dispatch(incrementFive())}>Pluse Five</button>
+                <button onClick={() => dispatch(decrementTwenty())}>Minus Twenty</button>
             </div>
         </>
     )
