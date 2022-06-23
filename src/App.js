@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './Counter/Counter';
 
 function App() {
   return (
     <div className="App">
-      <p>Rushikesh</p>
-  
+      <Counter />
+
     </div>
   );
 }
